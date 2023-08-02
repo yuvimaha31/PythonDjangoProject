@@ -1,0 +1,39 @@
+{% load static %}
+{% include 'base.html' %}
+
+{% block content %}
+
+
+<!-- page title -->
+<section class="page-title-alt bg-primary position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+         <u><b> <h1 class="text-white font-tertiary">ABOUT US</h1></b></u>
+        </div>
+      </div>
+    </div>
+    
+   
+  <!-- /page title -->
+  
+  <!-- about -->
+  <section class="section pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h3>
+            Hello,this is SATHISH generously welcoming you all to our "HOTEL MSD"          </h3>
+        </div>
+        <div class="col-md-4 text-center drag-lg-top">
+          <div class="shadow-down mb-4">
+            <img src="{% static 'I/L.jpg' %}" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white">
+          </div>
+          
+          <h4>HOTEL MSD</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+{% endblock %}

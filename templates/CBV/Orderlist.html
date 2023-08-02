@@ -1,0 +1,21 @@
+{% include 'base.html' %}
+
+{% block content %}
+
+    <h1>Order Database</h1>
+    <h1>(Create, Retrive, Update, Delete)</h1>
+    {% for object in object_list %}
+    Name         :{{ object.name}}<br>
+    quantity     :{{ object.quantity}} <br>
+    price        : {{object.price}}<br>
+    availability : {{object.availability}}<br>  
+    <div class="button-container">
+        <a href = "{{ object.id }}/Orderdetail"><button type="button" class="btn btn-primary">Detail</button></a>
+        <a href = "{{ object.id }}/Orderupdate"><button type="button" class="btn btn-success">Update</button></a>
+        <a href = "{{ object.id }}/Orderdelete"><button type="button" class="btn btn-danger">Delete</button></a>
+    </div>
+
+    <br><hr>
+    {% endfor %}
+
+{% endblock %}
